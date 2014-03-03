@@ -107,7 +107,7 @@
 					// If we found any leading punctuation, extract them from the word, and
 					// give them their own text node.
 					if (startIndex > -1) {
-						processedContent.push(document.createTextNode(word.substr(0, startIndex)));
+						processedContent.push(createTextNode(word.substr(0, startIndex)));
 						word = word.substr(startIndex);
 					}
 					
@@ -140,19 +140,19 @@
 					
 					// If we found trailing punctuation earlier, add it now.
 					if (lastChar) {
-						processedContent.push(document.createTextNode(lastChar));
+						processedContent.push(createTextNode(lastChar));
 					}
 
 				} else {
 				
 					// Create a new text node containing only the word, and add it to
 					// the collection of processed content.
-					processedContent.push(document.createTextNode(word));
+					processedContent.push(createTextNode(word));
 				}
 				
 				// This process removes the spaces between the words, so add a new
 				// text node that contains a space.
-				processedContent.push(document.createTextNode(" "));
+				processedContent.push(createTextNode(" "));
 			}
 			
 			// The last node in the collection is an unneeded space character.
@@ -182,6 +182,18 @@
 		}
 
 		return map;
+	}
+	
+	/**
+	 * Creates a new text node with the given contents.
+	 *
+	 * @method createTextNode
+	 * @param {String} text the contents of the new text node
+	 * @return the new text node
+	 * @type HTMLElement
+	 */
+	function createTextNode (text) {
+		return document.createTextNode(text);
 	}
 	
 	/**
