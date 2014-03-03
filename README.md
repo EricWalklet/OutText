@@ -1,6 +1,6 @@
 # OutText #
 
-OutText is a jQuery plugin that generates for randomly-selected (and not-so-randomly-selected) words throughout an HTML document.
+OutText is a jQuery plugin that generates links for randomly-selected (and not-so-randomly-selected) words throughout an HTML document.
 
 ## Dependencies ##
 
