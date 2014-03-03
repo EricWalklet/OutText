@@ -4,7 +4,7 @@ OutText is a jQuery plugin that generates links for randomly-selected (and not-s
 
 ## Dependencies ##
 
-* jQuery 1.11.0
+* jQuery 1.7.1+ (may work with even older versions)
 
 ## Features ##
 
