@@ -13,6 +13,7 @@ OutText is a jQuery plugin that generates for randomly-selected (and not-so-rand
 * Restricts link creation within certain element types.
 * Allows configurable "priority words" that will always yield OutText links.
 * Recognizes leading and trailing punctuation, ignoring them when creating links.
+* Tested with Chrome, Firefox, IE10 (including IE8 mode)
 
 ## Usage ##
 
@@ -101,7 +102,7 @@ When OutText encounters these words in the document, it will ignore any configur
 OutText will not force link generation on a word that contains extra characters, including leading or trailing punctuation, or a word that is split by additional inner HTML tags.
 
 ```html
-<!-- This will generate a forced OnText link. -->
+<!-- This will generate a forced OutText link. -->
 George: Some bacon would be really nice right now.
 
 <!-- So will this. -->
